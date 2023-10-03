@@ -3,16 +3,16 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 import HeaderComponents from '../Components/Header';
-import HomePageContainer from '../Container/Home';
-import ContactPageContainer from '../Container/Contact';
-import AboutPageContainer from '../Container/About';
-import CartPageContainer from '../Container/Cart';
-import ProductsPageContainer from '../Container/Products';
-import SingleProductContainer from '../Container/SingleProduct';
-import SearchContainerPage from '../Container/Search';
-import LoginContainer from '../Container/Login';
-import FooterComponent from '../Component/Footer';
-import UserContainer from '../Container/User';
+import HomePageContainer from '../Containers/Home';
+import ContactPageContainer from '../Containers/Contact';
+import AboutPageContainer from '../Containers/About';
+import CartPageContainer from '../Containers/Cart';
+import ProductsPageContainer from '../Containers/Products';
+import SingleProductContainer from '../Containers/SingleProduct';
+import SearchContainerPage from '../Containers/Search';
+import LoginContainer from '../Containers/Login';
+import FooterComponent from '../Components/Footer';
+import UserContainer from '../Containers/User';
 const RouteConfigComponents = ()=>{
     return (
         <>

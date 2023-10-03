@@ -1,9 +1,17 @@
-import React from 'react'
+import {configureStore} from "@reduxjs/toolkit";
+import productReducer from "./productSlice";
+import categoryReducer from "./categorySlice";
+import cartReducer from "./cartSlice";
+import searchReducer from "./searchSlice";
+import userSlice from "./userSlice";
+const store = configureStore({
+    reducer: {
+        product: productReducer,
+        category: categoryReducer,
+        cart: cartReducer,
+        search: searchReducer,
+        user:userSlice
+    }
+});
 
-const store = () => {
-  return (
-    <div>store</div>
-  )
-}
-
-export default store
+export default store;
