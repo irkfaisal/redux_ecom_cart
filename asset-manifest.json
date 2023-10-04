@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/redux_ecom_cart/static/css/main.b354e1b4.css",
-    "main.js": "/redux_ecom_cart/static/js/main.205fdbb5.js",
+    "main.js": "/redux_ecom_cart/static/js/main.bf305be2.js",
     "static/js/787.750b04f3.chunk.js": "/redux_ecom_cart/static/js/787.750b04f3.chunk.js",
     "static/media/google.png": "/redux_ecom_cart/static/media/google.c7304bd3e596455caaf5.png",
     "static/media/apple.png": "/redux_ecom_cart/static/media/apple.268deee6f3c77c875ccb.png",
@@ -12,11 +12,11 @@
     "static/media/s.webp": "/redux_ecom_cart/static/media/s.fd6a8657ea6227afdf8c.webp",
     "index.html": "/redux_ecom_cart/index.html",
     "main.b354e1b4.css.map": "/redux_ecom_cart/static/css/main.b354e1b4.css.map",
-    "main.205fdbb5.js.map": "/redux_ecom_cart/static/js/main.205fdbb5.js.map",
+    "main.bf305be2.js.map": "/redux_ecom_cart/static/js/main.bf305be2.js.map",
     "787.750b04f3.chunk.js.map": "/redux_ecom_cart/static/js/787.750b04f3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b354e1b4.css",
-    "static/js/main.205fdbb5.js"
+    "static/js/main.bf305be2.js"
   ]
 }
