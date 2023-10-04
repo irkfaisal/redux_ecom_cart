@@ -33,7 +33,7 @@ const HeaderComponents = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav>
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/redux_ecom_cart">
                   Home
                 </Link>
               </Nav>
