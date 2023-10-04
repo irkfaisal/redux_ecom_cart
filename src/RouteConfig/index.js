@@ -19,8 +19,8 @@ const RouteConfigComponents = () => {
             <BrowserRouter>
                 <HeaderComponents />
 
-                <Routes basename="/">
-                    <Route path="/" element={<HomePageContainer />} />
+                <Routes >
+                    <Route path="/redux_ecom_cart" element={<HomePageContainer />} />
                     <Route path="/about" element={<AboutPageContainer />} />
                     <Route path="/contact" element={<ContactPageContainer />} />
                     <Route path="/cart" element={<CartPageContainer />} />
