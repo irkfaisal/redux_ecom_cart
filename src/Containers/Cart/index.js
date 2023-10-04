@@ -12,14 +12,17 @@ import "./Cart.scss";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
 import { BsFillCartCheckFill, BsTrash } from "react-icons/bs";
+import Alert from 'react-bootstrap/Alert';
+
 const CartPageContainer = () => {
   const dispatch = useDispatch();
   const carts = useSelector(getAllCarts);
-  const { itemsCount, totalAmount} = useSelector((state) => state.cart);
+  const { itemsCount, totalAmount } = useSelector((state) => state.cart);
   //console.log('itemsCount',itemsCount,'totalAmount',totalAmount)
 
-  const checkOutHandler = ()=>{
+  const checkOutHandler = () => {
     console.log(carts)
+    alert("Thanks for shopping")
   }
   if (carts.length === 0) {
     return (
@@ -104,12 +107,12 @@ const CartPageContainer = () => {
               Clear Cart
             </Button>
             <div className="totlaAmount">
-                <span>Total items:- {itemsCount}</span>
-                <span>Total prices:- 
-                    {
-                      `${formatPrice(totalAmount)}`
-                    }
-                </span>
+              <span>Total items:- {itemsCount}</span>
+              <span>Total prices:-
+                {
+                  `${formatPrice(totalAmount)}`
+                }
+              </span>
             </div>
             <Button className="checkoutbtn" onClick={checkOutHandler} variant="success">
               Check Out

@@ -26,7 +26,7 @@ const HeaderComponents = () => {
   }, [carts])
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+      <Navbar collapseOnSelect expand="lg"  style={{color:"#fff" ,background: "#F34C19" }}>
         <Container>
           <Navbar.Brand>My ecommerce</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -48,7 +48,7 @@ const HeaderComponents = () => {
                 <Link className="nav-link" to="/cart">
                   Cart
                   {
-                    carts && carts.length && carts.length > 0 ? <Badge bg="info">{carts.length}</Badge> : ''
+                    carts && carts.length && carts.length > 0 ? <Badge style={{background:"#343F71", color:"black"}}>{carts.length}</Badge> : ''
                   }
 
                 </Link>

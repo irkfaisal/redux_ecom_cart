@@ -29,12 +29,12 @@ const SingleProductContainer = () => {
   useEffect(() => {
     dispatch(fetchAsyncProductSingle(productId));
 
-    if(cartMessageStatus){
-        setTimeout(() => {
-          dispatch(setCartMessageOff());
-        }, 2000);
-      }
-      // eslint-disable-next-line
+    if (cartMessageStatus) {
+      setTimeout(() => {
+        dispatch(setCartMessageOff());
+      }, 2000);
+    }
+    // eslint-disable-next-line
   }, [cartMessageStatus]);
 
   if (productSingleStatus === STATUS.LOADING) {
@@ -62,8 +62,8 @@ const SingleProductContainer = () => {
       product?.price - product?.price * (product?.discountPercentage / 100);
     let totalPrice = quantity * discountedPrice;
 
-     dispatch(addToCart({...product, quantity: quantity, totalPrice, discountedPrice}));
-     dispatch(setCartMessageOn(true));
+    dispatch(addToCart({ ...product, quantity: quantity, totalPrice, discountedPrice }));
+    dispatch(setCartMessageOn(true));
   };
 
   return (
@@ -189,7 +189,7 @@ const SingleProductContainer = () => {
                 </div>
 
                 <div className="addBuySection">
-                  <button type="button" className="addToBtn btn btn-primary">
+                  <button type="button" className="addToBtn btn" style={{ background: "#F34C19" }}>
                     <BsFillCartCheckFill />
                     <span
                       className="btnText"
@@ -197,10 +197,10 @@ const SingleProductContainer = () => {
                         addToCartHandler(product);
                       }}
                     >
-                     add to cart
+                      add to cart
                     </span>
                   </button>
-                  <button type="button" className="addToBtn btn btn-primary">
+                  <button type="button" className="addToBtn btn" style={{ background: "#F34C19" }}>
                     <span className="btnText">buy now</span>
                   </button>
                 </div>
