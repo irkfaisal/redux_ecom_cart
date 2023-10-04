@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 
 
 import HeaderComponents from '../Components/Header';
@@ -13,12 +13,13 @@ import SearchContainerPage from '../Containers/Search';
 import LoginContainer from '../Containers/Login';
 import FooterComponent from '../Components/Footer';
 import UserContainer from '../Containers/User';
-const RouteConfigComponents = ()=>{
+const RouteConfigComponents = () => {
     return (
         <>
             <BrowserRouter>
                 <HeaderComponents />
-                <Routes>
+
+                <Routes basename="/">
                     <Route path="/" element={<HomePageContainer />} />
                     <Route path="/about" element={<AboutPageContainer />} />
                     <Route path="/contact" element={<ContactPageContainer />} />
